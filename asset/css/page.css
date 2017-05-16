@@ -1,14 +1,15 @@
 body {
 	padding-top:20px;
+	padding-bottom:50px;
 }
 .clear {
 	clear:both;
-	margin-bottom:10px;
+	margin-top:10px;
 }
 .page-search {
 	padding-top:150px;
 }
-.page-search-result {
+.page-search-result, .page-search-view {
 	padding-top:30px;
 }
 .search-result-text:hover {
@@ -19,4 +20,13 @@ body {
 .search-result-text a:hover {
 	text-decoration: none;
 
+}
+.search-view-text {
+	border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: #fff !important;
+    cursor: text !important;
+    border-radius:0;
+    box-shadow: none;
 }
