@@ -1,0 +1,22 @@
+body {
+	padding-top:20px;
+}
+.clear {
+	clear:both;
+	margin-bottom:10px;
+}
+.page-search {
+	padding-top:150px;
+}
+.page-search-result {
+	padding-top:30px;
+}
+.search-result-text:hover {
+	background: #eee;
+	border: 1px solid #ccc;
+	font-weight: bold;
+}
+.search-result-text a:hover {
+	text-decoration: none;
+
+}
