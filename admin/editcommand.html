@@ -6,6 +6,7 @@
   <title>Theme</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
   <link rel="stylesheet" href="../asset/css/page-admin.css">
   
 </head>
@@ -50,8 +51,8 @@
     <div class="col-md-12">
       <ol class="breadcrumb">
         <li><a href="#">Manage</a></li>
-        <li><a href="#">User</a></li>
-        <li class="active">add User</li>
+        <li><a href="#">Command</a></li>
+        <li class="active">edit Command</li>
       </ol>
     </div>
   </div>
@@ -60,38 +61,9 @@
     <div class="col-md-12">
       <form class="form-horizontal">
         <div class="form-group">
-          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <label for="inputEmail3" class="col-sm-2 control-label">IDCard</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputPassword3" class="col-sm-2 control-label">Name</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" placeholder="Name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputPassword3" class="col-sm-2 control-label">SurName</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" placeholder="SurName">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputPassword3" class="col-sm-2 control-label">Department</label>
-          <div class="col-sm-10">
-            <select name="" id="" class="form-control">
-              <option value="">please select department</option>
-              <option value="">A</option>
-              <option value="">B</option>
-              <option value="">C</option>
-            </select>
+            <input type="text" class="form-control" id="inputEmail3" placeholder="IDCard" maxlength="13">
           </div>
         </div>
         <div class="form-group">
@@ -103,6 +75,12 @@
               <option value="">B</option>
               <option value="">C</option>
             </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Position No.</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" placeholder="Position No." >
           </div>
         </div>
         <div class="form-group">
@@ -123,21 +101,40 @@
           </div>
         </div>
         <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Receive Date</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="datepicker" placeholder="Receive Date">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Approve Date</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="datepicker2" placeholder="Approve Date">
+          </div>
+        </div>
+        <div class="form-group">
           <label for="inputPassword3" class="col-sm-2 control-label">Status</label>
           <div class="col-sm-10">
             <select name="" id="" class="form-control">
               <option value="">please select status</option>
-              <option value="">ON</option>
-              <option value="">OFF</option>
+              <option value="">status A</option>
+              <option value="">status B</option>
+              <option value="">status C</option>
+              <option value="">status D</option>
             </select>
           </div>
         </div>
-
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Remark</label>
+          <div class="col-sm-10">
+            <textarea name="" id="" class="form-control" cols="30" rows="5" placeholder="Remark"></textarea>
+          </div>
+        </div>
 
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10" style="text-align: center;">
             <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="user.html" class="btn btn-default">BACK</a>
+            <a href="command.html" class="btn btn-default">BACK</a>
           </div>
         </div>
       </form>
@@ -146,6 +143,7 @@
     </div>
   </div>
 </div>
+<div class="clear"></div>
 <!-- /container-fluid -->
 <footer class="footer">
   <div class="container">
@@ -158,5 +156,14 @@
   
 <!-- Latest compiled and minified JavaScript -->
   <script src="../asset/js/bootstrap.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+  <script>
+    $('#datepicker').datepicker({
+      format: 'dd-mm-yyyy'
+    });
+     $('#datepicker2').datepicker({
+      format: 'dd-mm-yyyy'
+    });
+  </script>
 </body>
 </html>

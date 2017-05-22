@@ -25,13 +25,18 @@ body {
 }
 .block-user, .block-command {
 	padding:20px;
+	font-size:24px;
+	margin-bottom:10px;
 }
 .block-user {
-	background: red;
-	border:1px solid red;
+	background: #3366FF;
+	border:1px solid #3366FF;
 	color: #fff;
+	box-shadow: 3px 3px 5px #888888;
 }
 .block-command {
-	background: pink;
-	border:1px solid pink;
+	background: #006600;
+	border:1px solid #006600;
+	color: #fff;
+	box-shadow: 3px 3px 5px #888888;
 }
