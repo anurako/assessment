@@ -29,14 +29,14 @@ body {
 	margin-bottom:10px;
 }
 .block-user {
-	background: #3366FF;
-	border:1px solid #3366FF;
+	background: #9FC1D1;
+	border:1px solid #9FC1D1;
 	color: #fff;
 	box-shadow: 3px 3px 5px #888888;
 }
 .block-command {
-	background: #006600;
-	border:1px solid #006600;
+	background: #1CB5BE;
+	border:1px solid #1CB5BE;
 	color: #fff;
 	box-shadow: 3px 3px 5px #888888;
 }
